@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float a, s;
+    cout << "\n Пожалуйста, введите значения";
+    cout << "\na="; cin>>a;
+    if (a >= 0 && a <= 2)
+        cout << "\n Ребенок будет в группе - ясли" << s;
+        else
+    if(a >= 2 && a <= 4)
+        cout << "\n Ребенок будет в группе - младшая" << s;
+        else
+    if(a >= 4 && a<=6)
+        cout << "\n Ребенок будет в группе - подготовительная" << s;
+        else
+        cout << "\n Ребенка не берем " << s;
+    cout << "\n Спасибо за пользование сайтом!";
+    return 0;
+}

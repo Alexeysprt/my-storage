@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float s;
+    cout <<"\nЧисло - "; cin >> s;
+    if(s==1) cout <<"\nЯнварь";
+    if(s==2) cout <<"\nФевраль";
+    if(s==3) cout <<"\nМарт";
+    if(s==4) cout <<"\nАпрель";
+    if(s==5) cout <<"\nМай";
+    if(s==6) cout <<"\nИюнь";
+    if(s==7) cout <<"\nИюль";
+    if(s==8) cout <<"\nАвгуст";
+    if(s==9) cout <<"\nСентябрь";
+    if(s==10) cout <<"\nОктябрь";
+    if(s==11) cout <<"\nНоябрь";
+    if(s==12) cout <<"\nДекабрь";
+    return 0;
+}
