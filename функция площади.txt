@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+    
+float plosh(float x, float y, float z)
+{
+    float s, p;
+    p= (x+y+z)/2;
+    s= sqrt(p*(p-x)*(p-y)*(p-z));
+    return s;
+}
+int main() 
+{
+    cout<<"\n Hello";
+    float a,b,c,p,s;
+    cout<<"\na="; cin>>a;
+    cout<<"\nb="; cin>>b;
+    cout<<"\nc="; cin>>c;
+    s=plosh(a, b, c);
+    cout<<"\nПлощадь Треугольника="<< s;
+    if (s>15)
+        cout<<"\nПлощадь больше 15!";
+    else
+        cout<<"\nПлощадь в норме";
+    cout<<"\nbye bye bye!";
+    return 0;
+}

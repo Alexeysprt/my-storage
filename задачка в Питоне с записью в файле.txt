@@ -1,0 +1,14 @@
+a= int(input("Введите - ")) 
+b= int(input("Введите - ")) 
+if(a==b): 
+    print("End") 
+else: 
+    while (a!=b): 
+        if (a>b): 
+            a=a-b 
+        else: 
+            b=b-a 
+print(a, b) 
+file = open("result.txt", "w") 
+file.write( str(a) + "       " + str(b)) 
+file.close()
