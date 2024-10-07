@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stdio.h>
+int main()
+{
+    int const N=2; int i;
+    float maxs;
+    struct student
+    {
+        char fam[30];
+        int kurs;
+        char grup[10];
+        float stip;
+    };
+    student stud[N];
+    for(i=0; i<N; i++)
+{
+        printf("%d-й студент", i + 1);
+        printf("\n Фамилия:");
+        scanf("%s", &stud[i].fam);
+        printf("Курс:");
+        scanf("%d",&stud[i].kurs);
+        printf("Группа:");
+        scanf("%s", &stud[i] .grup);
+        printf("Стипендия:");
+        scanf("%f",&stud[i].stip);
+    }
+    maxs=0;
+    for(i=0; i<N; i++)
+        if(stud[i].stip>maxs)
+            maxs=stud[i].stip;
+    printf("\n Студенты, получающие максимальную стипендию %f руб.",maxs);
+    for(i=0; i<N; i++)
+        if(stud[i].stip==maxs)
+            printf("\n%s",stud[i].fam);
+    return 0;
+}
