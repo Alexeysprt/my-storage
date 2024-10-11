@@ -1,0 +1,17 @@
+//СР2(2) Вычислить значение выражения по формуле (все переменные принимают действительные значения)
+#include <math.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+    //заданы переменные
+    float a, b, c, d, ans;
+    cout<<"\nEnter a value a - "; cin>>a;
+    cout<<"\nEnter a value b - "; cin>>b;
+    cout<<"\nEnter a value c - "; cin>>c;
+    cout<<"\nEnter a value d - "; cin>>d;
+    //решение уравнения
+    ans=(a/b)*(b/d)-(a*b-c)/(c*d);
+    cout<<"\nanswer:"<<ans;
+    return 0;
+}
