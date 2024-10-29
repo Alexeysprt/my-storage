@@ -26,7 +26,7 @@ int main() {
     }
 
     // Определение самого выгодного банка для покупки долларов 
-    int minBuy = 0; // индекс банка с максимальным курсом покупки 
+    int minBuy = 0; 
     for (int i = 1; i < n; ++i) {
         if (buy[i] < buy[minBuy]) {
             minBuy = i;
@@ -34,7 +34,7 @@ int main() {
     }
 
     // Определение самого выгодного банка для продажи долларов
-    int maxSell = 0; // индекс банка с минимальным курсом продажи
+    int maxSell = 0;
     for (int i = 1; i < n; ++i) {
         if (sell[i] > sell[maxSell]) {
             maxSell = i;
