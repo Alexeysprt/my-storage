@@ -4,14 +4,14 @@
 выгодно обменять доллары на рубли.
 #include <iostream>
 using namespace std;
-const int BANKS = 100; // Максимальное количество банков
-const int LENGTH = 50; // Максимальная длина названия банка
+const int banks = 100; // Максимальное количество банков
+const int length = 50; // Максимальная длина названия банка
 
 int main() {
     int n; // количество банков 
-    char Names[BANKS][LENGTH]; // массив названий банков
-    int buy[BANKS]; // массив курсов покупки 
-    int sell[BANKS]; // массив курсов продажи 
+    char Names[banks][length]; // массив названий банков
+    int buy[banks]; // массив курсов покупки 
+    int sell[banks]; // массив курсов продажи 
     cout << "\nВведите количество банков: ";
     cin >> n;
 
