@@ -7,7 +7,7 @@ char ch;
 int a, b;
 float x;
 double y, z;
-ch = 'K';
+ch = 'V';
 a = 2; b = 5;
 x = 5.5F;
 y = 6;
