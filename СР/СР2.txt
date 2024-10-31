@@ -1,4 +1,4 @@
-//СР2(2) Вычислить значение выражения по формуле (все переменные принимают действительные значения)
+//СР2(2.1) Вычислить значение выражения по формуле (все переменные принимают действительные значения)
 #include <math.h>
 #include <iostream>
 using namespace std;
@@ -13,5 +13,20 @@ int main()
     //решение уравнения
     ans=(a/b)*(b/d)-(a*b-c)/(c*d);
     cout<<"\nanswer:"<<ans;
+    return 0;
+}
+//СР2(2.2) Бабушка вяжет в неделю 3 пары детских носков, пару женских и пару мужских и про-дает их. Считая, что в месяце 4 недели, определить, какую прибыль бабушка имеет за месяц.
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float d, w, m, month;
+    cout<<"\nEnter a price children's socks - "; cin>>d;
+    cout<<"\nEnter a price women's socks - "; cin>>w;
+    cout<<"\nEnter a price men's socks - "; cin>>m;
+    month=(3*d+w+m)*4;
+    cout<<"\nProfit for the month: "<<month;
     return 0;
 }
