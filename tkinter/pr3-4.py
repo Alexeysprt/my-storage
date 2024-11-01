@@ -20,7 +20,7 @@ def minusik():
     minus = (int(entry1.get())-int(entry2.get()))
     answer.config (text=minus)
 def multip():
-    mult = (int(entry1.get())*int(entry2.get()))
+    mult = (int(entry1.get())*int(entry2.get())*2)
     answer.config (text=mult)
 def divis():
     div = (int(entry1.get())/int(entry2.get()))
